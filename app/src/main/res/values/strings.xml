@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Teams Balancer</string>
-    <string name="edit_message">Ingresar nombre...</string>
-    <string name="button_send">Agregar jugador</string>
+    <string name="nombre_jugador">Ingresar nombre...</string>
+    <string name="boton_agregar_jugador">Agregar jugador</string>
 </resources>
