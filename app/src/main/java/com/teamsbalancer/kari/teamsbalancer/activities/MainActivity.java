@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.teamsbalancer.kari.teamsbalancer.R;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         ViewGroup viewGroup = (ViewGroup) findViewById(R.id.activity_main);
         viewGroup.addView(textView);
+
+        nombreJugador.getText().clear();
     }
 
 }
