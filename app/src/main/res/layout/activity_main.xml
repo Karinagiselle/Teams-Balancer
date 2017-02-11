@@ -19,4 +19,11 @@
             android:text="@string/boton_agregar_jugador"
             android:onClick="agregarJugador"/>
     </TableRow>
+    <TableRow>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/boton_generar_equipos"/>
+    </TableRow>
 </TableLayout>
