@@ -24,6 +24,7 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="@string/boton_generar_equipos"/>
+            android:text="@string/boton_generar_equipos"
+            android:onClick="generarEquipos"/>
     </TableRow>
 </TableLayout>

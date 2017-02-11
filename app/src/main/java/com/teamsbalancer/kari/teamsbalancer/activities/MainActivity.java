@@ -20,6 +20,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    List<Jugador> listaDeJugadores = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void agregarJugador(View view) {
         EditText nombreJugador = (EditText) findViewById(R.id.nombre_jugador);
+        Jugador jugador = new Jugador();
+        jugador.setNombre(nombreJugador.getText().toString());
+        listaDeJugadores.add(jugador);
 
         TextView textView = new TextView(this);
         textView.setTextSize(10);
@@ -39,4 +44,8 @@ public class MainActivity extends AppCompatActivity {
         nombreJugador.getText().clear();
     }
 
+    public void generarEquipos(View view) {
+        Intent intent = new Intent(this, EquiposArmadosActivity.class);
+        startActivity(intent);
+    }
 }
