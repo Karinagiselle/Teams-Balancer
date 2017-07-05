@@ -12,19 +12,17 @@
                   android:layout_height="wrap_content"
                   android:hint="@string/nombre_jugador" />
 
-        <Button
+        <Button android:id="@+id/agregar_jugador"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/boton_agregar_jugador"
-            android:onClick="agregarJugador"/>
+            android:text="@string/boton_agregar_jugador"/>
     </TableRow>
     <TableRow>
-        <Button
+        <Button android:id="@+id/generar_equipos"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="@string/boton_generar_equipos"
-            android:onClick="generarEquipos"/>
+            android:text="@string/boton_generar_equipos"/>
     </TableRow>
 </TableLayout>

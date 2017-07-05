@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TableRow;
@@ -26,6 +27,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button buttonAgregarJugador = (Button) findViewById(R.id.agregar_jugador);
+        buttonAgregarJugador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                agregarJugador(v);
+            }
+        });
+
+        Button buttonGenerarEquipos = (Button) findViewById(R.id.generar_equipos);
+        buttonGenerarEquipos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                generarEquipos(v);
+            }
+        });
     }
 
     public void agregarJugador(View view) {
